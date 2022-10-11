@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+* body {
+  height: 100vh;
+  background-image: url(../images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  padding: 0 7vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(230deg, 100%, 99%);
+}
+* body div.pres {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../images/pattern-circles.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8vh 0;
+}
+* body div.pres h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.3vh;
+  color: hsl(227deg, 35%, 25%);
+}
+* body div.pres p {
+  color: hsl(225deg, 20%, 60%);
+  margin-bottom: 0.5vh;
+  font-size: 0.8rem;
+}
+* body div.princ {
+  width: 100%;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4vh 0;
+  gap: 5vh;
+}
+* body div.princ #pageviews {
+  font-size: 0.8rem;
+  color: hsl(225deg, 20%, 60%);
+  letter-spacing: 0.4vw;
+  font-weight: 800;
+}
+* body div.princ input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 86%;
+  height: 1vh;
+  border-radius: 15px;
+  background: hsl(224deg, 65%, 95%);
+}
+* body div.princ input::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  background-image: url(../images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(174deg, 86%, 45%);
+  border: none;
+  box-shadow: 0px 0px 27px 8px rgb(165, 243, 235);
+  -webkit-box-shadow: 0px 0px 27px 8px rgb(165, 243, 235);
+  -moz-box-shadow: 0px 0px 27px 8px rgb(165, 243, 235);
+  cursor: pointer;
+}
+* body div.princ div.price {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3vw;
+}
+* body div.princ div.price h1 {
+  color: hsl(227deg, 35%, 25%);
+}
+* body div.princ div.price h4 {
+  color: hsl(225deg, 20%, 60%);
+  font-weight: 200;
+}
+* body div.princ div.billing {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-left: -5vw;
+  gap: 4vw;
+}
+* body div.princ div.billing p {
+  font-size: 0.75rem;
+  font-weight: 200;
+  color: hsl(225deg, 20%, 60%);
+}
+* body div.princ div.billing p:nth-child(3)::after {
+  content: "-25%";
+  margin-left: 1vw;
+  height: 2.5vh;
+  position: absolute;
+  width: 11vw;
+  border-radius: 25px;
+  color: hsl(15deg, 100%, 70%);
+  text-align: center;
+  background-color: hsl(14deg, 92%, 95%);
+}
+* body div.princ div.billing div.bill-button {
+  display: flex;
+  position: relative;
+}
+* body div.princ div.billing div.bill-button #bill-input {
+  height: 3.5vh;
+  width: 14vw;
+  cursor: pointer;
+}
+* body div.princ div.billing div.bill-button .ball {
+  height: 2.5vh;
+  width: 2.5vh;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: 15%;
+  left: 5%;
+  cursor: pointer;
+}
+* body div.princ div.line {
+  width: 100vw;
+  background-color: hsl(230deg, 100%, 99%);
+  height: 0.5vh;
+}
+* body div.princ div.percs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+}
+* body div.princ div.percs span {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+}
+* body div.princ div.percs span p {
+  font-size: 0.8rem;
+  color: hsl(225deg, 20%, 60%);
+}
+* body div.princ button {
+  width: 50vw;
+  height: 6vh;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(227deg, 35%, 25%);
+  color: hsl(226deg, 100%, 87%);
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+@mixin flex-container ($direction, $space, $items) {
+    display: flex;
+    align-items: $items;
+    flex-direction: $direction;
+    justify-content: $space;    
+}
+
+$small-text: hsl(225, 20%, 60%);
+$big-text: hsl(227, 35%, 25%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    body {
+        height: 100vh;
+        background-image: url(../images/bg-pattern.svg);
+        background-repeat: no-repeat;
+        padding: 0 7vw;
+        @include flex-container(column, center, center);
+        background-color: hsl(230, 100%, 99%);
+        div.pres {
+            @include flex-container(column, center, center);
+            background-image: url(../images/pattern-circles.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 8vh 0;
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 1.3vh;
+                color: $big-text;
+            }
+            p {
+                color: $small-text;
+                margin-bottom: 0.5vh;
+                font-size: 0.8rem;
+            }
+        }
+        div.princ {
+            width: 100%;
+            border-radius: 8px;
+            background-color: white;
+            @include flex-container(column, center, center);
+            padding: 4vh 0;
+            gap: 5vh;
+            #pageviews {
+                font-size: 0.8rem;
+                color: $small-text;
+                letter-spacing: 0.4vw;
+                font-weight: 800;
+            }
+            input {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 86%;
+                height: 1vh;
+                border-radius: 15px;
+                background: hsl(224, 65%, 95%);
+                &::-moz-range-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    height: 5vh;
+                    width: 5vh;
+                    border-radius: 50%;
+                    background-image: url(../images/icon-slider.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: hsl(174, 86%, 45%);
+                    border: none;
+                    box-shadow: 0px 0px 27px 8px rgba(165,243,235,1);
+                    -webkit-box-shadow: 0px 0px 27px 8px rgba(165,243,235,1);
+                    -moz-box-shadow: 0px 0px 27px 8px rgba(165,243,235,1);
+                    cursor: pointer;
+                }
+            }
+            div.price {
+                @include flex-container(row, center, center);
+                gap: 3vw;
+                h1 {
+                    color: $big-text;
+                }
+                h4 {
+                    color: $small-text;
+                    font-weight: 200;
+                }
+            }
+            div.billing {
+                @include flex-container(row, center, center);
+                width: 100%;
+                margin-left: -5vw;
+                gap: 4vw;
+                p {
+                    font-size: 0.75rem;
+                    font-weight: 200;
+                    color: $small-text;
+                    &:nth-child(3)::after {
+                        content: "-25%";
+                        margin-left: 1vw;
+                        height: 2.5vh;
+                        position: absolute;
+                        width: 11vw;
+                        border-radius: 25px;
+                        color: hsl(15, 100%, 70%);
+                        text-align: center;
+                        background-color: hsl(14, 92%, 95%);
+                    }
+                }
+                div.bill-button {
+                    display: flex;
+                    position: relative;
+                    #bill-input {
+                        height: 3.5vh;
+                        width: 14vw;
+                        cursor: pointer;
+                    }
+                    .ball {
+                        height: 2.5vh;
+                        width: 2.5vh;
+                        background-color: white;
+                        position: absolute;
+                        border-radius: 50%;
+                        top: 15%;
+                        left: 5%;
+                        cursor: pointer;
+                    }
+                }
+            }
+            div.line {
+                width: 100vw;
+                background-color: hsl(230, 100%, 99%);
+                height: 0.5vh;
+            }
+            div.percs {
+                @include flex-container(column, center, center);
+                gap: 2vh;
+                span {
+                    @include flex-container(row, center, center);
+                    gap: 2vw;
+                    p {
+                        font-size: 0.8rem;
+                        color: $small-text;
+                    }
+                }
+            }
+            button {
+                width: 50vw;
+                height: 6vh;
+                border-radius: 50px;
+                border: none;
+                background-color: $big-text;
+                color: hsl(226, 100%, 87%);
+                cursor: pointer;
+            }
+        }
+    }
+}
