@@ -46,7 +46,7 @@ $big-text: hsl(227, 35%, 25%);
             @include flex-container(column, center, center);
             padding: 4vh 0;
             gap: 5vh;
-            #pageviews {
+            #page-views {
                 font-size: 0.8rem;
                 color: $small-text;
                 letter-spacing: 0.4vw;
