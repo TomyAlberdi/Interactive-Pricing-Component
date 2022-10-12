@@ -5,7 +5,7 @@
   }
   * body div.pres {
     width: 35vw;
-    padding: 12vh 0;
+    padding: 10vh 0;
   }
   * body div.pres br {
     display: none;
@@ -32,6 +32,9 @@
     grid-area: 1/2/2/3;
     gap: 0.5vw;
     padding-left: 2vw;
+  }
+  * body div.princ div.grid-container div.price h1 {
+    font-size: 2.8rem;
   }
   * body div.princ div.billing {
     margin-left: 0;
