@@ -63,6 +63,9 @@
                     width: 100%;
                     div.percs {
                         align-items: flex-start;
+                        span {
+                            gap: 1vw;
+                        }
                     }
                     button {
                         width: 12vw;

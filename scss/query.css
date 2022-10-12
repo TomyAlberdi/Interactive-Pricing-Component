@@ -63,6 +63,9 @@
   * body div.princ div.cr div.percs {
     align-items: flex-start;
   }
+  * body div.princ div.cr div.percs span {
+    gap: 1vw;
+  }
   * body div.princ div.cr button {
     width: 12vw;
     height: 5vh;
