@@ -35,6 +35,7 @@
   color: hsl(225deg, 20%, 60%);
   margin-bottom: 0.5vh;
   font-size: 0.8rem;
+  text-align: center;
 }
 * body div.princ {
   width: 100%;
@@ -47,13 +48,32 @@
   padding: 4vh 0;
   gap: 5vh;
 }
-* body div.princ #page-views {
+* body div.princ div.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 2vh;
+}
+* body div.princ div.grid-container #page-views {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: 1/1/2/2;
   font-size: 0.8rem;
   color: hsl(225deg, 20%, 60%);
   letter-spacing: 0.4vw;
   font-weight: 800;
 }
-* body div.princ input {
+* body div.princ div.grid-container div.input-cont {
+  grid-area: 2/1/3/2;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+* body div.princ div.grid-container div.input-cont input[type=range] {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
@@ -62,7 +82,7 @@
   border-radius: 15px;
   background: hsl(224deg, 65%, 95%);
 }
-* body div.princ input::-moz-range-thumb {
+* body div.princ div.grid-container div.input-cont input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
@@ -79,17 +99,18 @@
   -moz-box-shadow: 0px 0px 27px 8px rgb(165, 243, 235);
   cursor: pointer;
 }
-* body div.princ div.price {
+* body div.princ div.grid-container div.price {
+  grid-area: 3/1/4/2;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
   gap: 3vw;
 }
-* body div.princ div.price h1 {
+* body div.princ div.grid-container div.price h1 {
   color: hsl(227deg, 35%, 25%);
 }
-* body div.princ div.price h4 {
+* body div.princ div.grid-container div.price h4 {
   color: hsl(225deg, 20%, 60%);
   font-weight: 200;
 }
@@ -123,9 +144,14 @@
   position: relative;
 }
 * body div.princ div.billing div.bill-button #bill-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border-radius: 50px;
   height: 3.5vh;
   width: 14vw;
   cursor: pointer;
+  background: hsl(224deg, 65%, 95%);
 }
 * body div.princ div.billing div.bill-button .ball {
   height: 2.5vh;
@@ -142,25 +168,32 @@
   background-color: hsl(230deg, 100%, 99%);
   height: 0.5vh;
 }
-* body div.princ div.percs {
+* body div.princ div.cr {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vh;
+}
+* body div.princ div.cr div.percs {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   gap: 2vh;
 }
-* body div.princ div.percs span {
+* body div.princ div.cr div.percs span {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
   gap: 2vw;
 }
-* body div.princ div.percs span p {
+* body div.princ div.cr div.percs span p {
   font-size: 0.8rem;
   color: hsl(225deg, 20%, 60%);
 }
-* body div.princ button {
+* body div.princ div.cr button {
   width: 50vw;
   height: 6vh;
   border-radius: 50px;

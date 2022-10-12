@@ -1,0 +1,70 @@
+@media screen and (min-width: 1440px) {
+  * body {
+    height: 99.5vh;
+    background-size: contain;
+  }
+  * body div.pres {
+    width: 35vw;
+    padding: 12vh 0;
+  }
+  * body div.pres br {
+    display: none;
+  }
+  * body div.pres h3 {
+    font-size: 1.5rem;
+  }
+  * body div.princ {
+    width: 35vw;
+  }
+  * body div.princ div.grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  * body div.princ div.grid-container #page-views {
+    grid-area: 1/1/2/2;
+    letter-spacing: 0.1vw;
+    padding-right: 5vw;
+  }
+  * body div.princ div.grid-container div.input-cont {
+    grid-area: 2/1/3/3;
+  }
+  * body div.princ div.grid-container div.price {
+    grid-area: 1/2/2/3;
+    gap: 0.5vw;
+    padding-left: 2vw;
+  }
+  * body div.princ div.billing {
+    margin-left: 0;
+    gap: 1vw;
+  }
+  * body div.princ div.billing p {
+    font-size: 0.9rem;
+  }
+  * body div.princ div.billing p:nth-child(3)::after {
+    content: "25% discount";
+    margin-left: 0.5vw;
+    width: 7vw;
+  }
+  * body div.princ div.billing div.bill-button #bill-input {
+    width: 3vw;
+    height: 3vh;
+  }
+  * body div.princ div.billing div.bill-button .ball {
+    top: 12%;
+  }
+  * body div.princ div.line {
+    width: 100%;
+  }
+  * body div.princ div.cr {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  * body div.princ div.cr div.percs {
+    align-items: flex-start;
+  }
+  * body div.princ div.cr button {
+    width: 12vw;
+    height: 5vh;
+  }
+}/*# sourceMappingURL=query.css.map */
