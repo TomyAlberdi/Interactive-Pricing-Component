@@ -151,7 +151,7 @@
   height: 3.5vh;
   width: 14vw;
   cursor: pointer;
-  background: hsl(224deg, 65%, 95%);
+  background: hsl(223deg, 50%, 87%);
 }
 * body div.princ div.billing div.bill-button .ball {
   height: 2.5vh;
@@ -162,6 +162,9 @@
   top: 15%;
   left: 5%;
   cursor: pointer;
+  transition: left;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
 }
 * body div.princ div.line {
   width: 100vw;

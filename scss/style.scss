@@ -133,7 +133,7 @@ $big-text: hsl(227, 35%, 25%);
                         height: 3.5vh;
                         width: 14vw;
                         cursor: pointer;
-                        background: hsl(224, 65%, 95%);
+                        background: hsl(223, 50%, 87%);
                     }
                     .ball {
                         height: 2.5vh;
@@ -144,6 +144,9 @@ $big-text: hsl(227, 35%, 25%);
                         top: 15%;
                         left: 5%;
                         cursor: pointer;
+                        transition: left;
+                        transition-duration: 0.25s;
+                        transition-timing-function: ease-in-out;
                     }
                 }
             }
