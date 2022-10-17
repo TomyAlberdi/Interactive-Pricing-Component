@@ -147,6 +147,7 @@ $big-text: hsl(227, 35%, 25%);
                         transition: left;
                         transition-duration: 0.25s;
                         transition-timing-function: ease-in-out;
+                        pointer-events: none;
                     }
                 }
             }

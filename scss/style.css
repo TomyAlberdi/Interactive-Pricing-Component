@@ -165,6 +165,7 @@
   transition: left;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
+  pointer-events: none;
 }
 * body div.princ div.line {
   width: 100vw;
